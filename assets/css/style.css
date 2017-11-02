@@ -10,11 +10,11 @@
 	overflow: hidden;
 }
 
-.bannerLogo, .navbar-brand {
+.bannerLogo, .navbar-brand, .fakeR  {
 	font-family: 'Fugaz One', cursive;
 }
 
-.bannerPreLogo, .bannerSubtext, .quoteDivs, .iconP, .codeText, .fakerBenefits, .contactH, label {
+.bannerPreLogo, .bannerSubtext, .quoteDivs, .iconP, .codeText, .fakerBenefits, .contactH, label, .footerP {
 	font-family: 'Teko', sans-serif;
 }
 
@@ -94,12 +94,33 @@ body {
 	overflow-x: hidden;
 }
 
+.fakeR {
+	font-size: 40px;
+    margin-right: 3px;
+}
+
 .fakerBenefits {
 	text-align: center;
 	background: rgba(0, 0, 0, 0.32);
 	color: white;
 	padding: 15px;
 	font-size: 40px;
+}
+
+.footerBottom {
+	background: url("../img/black.png");
+	width: 100%;
+	height: 100px;
+}
+
+.footerP {
+    color: rgba(255, 255, 255, 0.59);
+    text-align: center;
+    width: 95%;
+    position: absolute;
+    bottom: 6px;
+    margin-bottom: 0;
+    font-size: 20px;
 }
 
 .iconP {
@@ -124,7 +145,7 @@ body {
 	left: 0;
 	top: 74px;
 	overflow: hidden;
-	height: 298px;
+	height: 301px;
 	/* display: none; */
 	opacity: 0.5;
 }
@@ -165,6 +186,15 @@ label {
 .navbar-light .navbar-nav .nav-link {
 	color: white;
     text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+    transition: transform 0.5s
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    transform: scale(1.25)
 }
 
 .noPadMarg {
@@ -260,7 +290,7 @@ label {
 	}
 
 	.iconsVideo {
-		height: 258px;
+		height: 261px;
 	}
 
 	.pageicons {
@@ -285,7 +315,7 @@ label {
 	}
 
 	.iconsVideo {
-	    height: 888px;
+	    height: 891px;
 	}
 
 	.pageicons {
@@ -319,7 +349,7 @@ label {
 	}
 
 	.iconsVideo {
-	    height: 738px;
+	    height: 741px;
 	}
 
 	.pageicons {
