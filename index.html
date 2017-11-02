@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  	<link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css" />
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.1/jquery.toast.css">
 	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Teko" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -20,13 +21,16 @@
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Features</a>
+	        <a class="nav-link" href="#about">About</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Pricing</a>
+	        <a class="nav-link" href="#features">Features</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -35,9 +39,9 @@
 	<div class="container-fluid top noPadMarg">
 		<div class="row noPadMarg">
 			<div class="col-sm-12 noPadMarg">
-				<div class="bannerGallery">
+				<div class="bannerGallery" id="home">
 					<video autoplay class="bannerVideo" loop>
-					  <source src="assets/video/CodeEffect.mp4" type="video/mp4">
+					  <source src="assets/video/CodeEffectsm.mp4" type="video/mp4">
 					</video>
 
 					<div class="videoTextOverlay">
@@ -72,7 +76,7 @@
 
 		<div class="row noPadMarg">
 			<div class="col-sm-12 noPadMarg">
-				<div class="imageContainer">
+				<div class="imageContainer" id="about">
 					<img src="assets/img/code.jpg" alt="code" class="codeImg">
 					<div class="codeText">
 						<div class="quoteDivs" data-aos="fade-left"
@@ -85,10 +89,15 @@
 	     </div>
 
      	<div class="col-sm-12 noPadMarg bgWhite">
-     		<h3 class="fakerBenefits">What does FakeR provide?</h1>
+     		<h3 class="fakerBenefits">FakeR provides:</h1>
      		<div class="row iconRow">
+     			<div class="iconsVideo">
+					<video autoplay class="bannerIcons" loop>
+						<source src="assets/video/CoolEffectDSsm.mp4" type="video/mp4">
+					</video>
+     			</div>
 				<div class="col-sm-12 col-md-4 center">
-					<div class="quoteDivs" data-aos="fade-right"
+					<div class="quoteDivs" id="features" data-aos="fade-right"
 		     			data-aos-easing="ease-in-sine">
 						<div class="charCircle">
 							<img src="assets/img/cloudicon.png" alt="cloud" class="pageicons">
@@ -111,7 +120,7 @@
 	     				data-aos-delay="300"
 		     			data-aos-easing="ease-in-sine">
 						<div class="charCircle">
-							<img src="assets/img/gearicon.png" alt="gear" class="pageicons">
+							<img src="assets/img/gearIcon.png" alt="gear" class="pageicons">
 							<p class="iconP">Top of the line code.</p>
 						</div>
 					</div>
@@ -122,7 +131,7 @@
      	<div class="col-sm-12 noPadMarg">
      		<div class="row contactRow">
 				<div class="col-sm-12 col-md-12 center">
-					<div class="contactDiv">
+					<div class="contactDiv" id="contact">
 						<h1 class="contactH">Get in Touch</h1>
 						<form>
 							<div class="form-group">
@@ -134,6 +143,8 @@
 								<label for="exampleFormControlTextarea1">Comment</label>
 								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 							</div>
+
+							<input type="submit" name="submit" class="submitButton">
 						</form>
 					</div>
 	     		</div>
@@ -141,11 +152,10 @@
      	</div>
 	</div>
 
-<script src="node_modules/animejs/anime.min.js"></script>
-<script src="node_modules/aos/dist/aos.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.1/jquery.toast.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 <script src="assets/js/site.js"></script>
